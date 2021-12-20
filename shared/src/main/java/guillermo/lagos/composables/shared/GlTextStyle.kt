@@ -26,7 +26,7 @@ object GlTextStyle{
 
         val itemDescription = TextStyle(
             fontSize = GlFontSize.Normal,
-            color = GlColors.Gray
+            color = GlColors.Black
         )
 
         val button = TextStyle(
