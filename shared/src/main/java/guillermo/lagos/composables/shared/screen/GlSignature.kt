@@ -18,10 +18,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import guillermo.lagos.composables.shared.GlColors
-import guillermo.lagos.composables.shared.GlTextStyle
-import guillermo.lagos.composables.shared.GlTheme
-import guillermo.lagos.composables.shared.R
+import guillermo.lagos.composables.shared.*
 import guillermo.lagos.composables.shared.layout.GlColumn
 import guillermo.lagos.composables.shared.screen.signature.SignatureView
 import guillermo.lagos.composables.shared.views.GlButton
@@ -70,8 +67,8 @@ fun GlSignature(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(250.dp)
-                .clip(GlTheme.shape)
-                .border(3.dp, GlColors.General, GlTheme.shape)
+                .clip(GlProperties.shape)
+                .border(3.dp, GlColors.General, GlProperties.shape)
                 .background(color = GlColors.Principal),
             factory = {
                 signatureView

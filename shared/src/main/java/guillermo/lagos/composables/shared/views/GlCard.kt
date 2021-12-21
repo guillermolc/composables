@@ -12,7 +12,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
 import guillermo.lagos.composables.shared.GlColors
-import guillermo.lagos.composables.shared.GlTheme
+import guillermo.lagos.composables.shared.GlProperties
+import guillermo.lagos.composables.shared.GlShapes
 import guillermo.lagos.composables.shared.noRippleClickable
 
 @ExperimentalComposeUiApi
@@ -21,7 +22,7 @@ import guillermo.lagos.composables.shared.noRippleClickable
 fun GlCard(
     modifier: Modifier = Modifier,
     background: Color = GlColors.Principal,
-    shape: Shape = GlTheme.shape,
+    shape: Shape = GlProperties.shape,
     borderColor: Color = GlColors.Principal,
     columnAlignment: Alignment.Horizontal = Alignment.CenterHorizontally,
     onClick: () -> Unit,

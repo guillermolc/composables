@@ -12,10 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import guillermo.lagos.composables.shared.GlColors
-import guillermo.lagos.composables.shared.GlTextStyle
-import guillermo.lagos.composables.shared.GlTheme
-import guillermo.lagos.composables.shared.noRippleClickable
+import guillermo.lagos.composables.shared.*
 
 
 @ExperimentalComposeUiApi
@@ -23,11 +20,11 @@ import guillermo.lagos.composables.shared.noRippleClickable
 fun GlButton(
     modifier: Modifier = Modifier,
     text: String,
-    textColor: Color = GlColors.General,
+    textColor: Color = GlColors.Principal,
     icon: Int? = null,
-    iconColor: Color = GlColors.General,
+    iconColor: Color = GlColors.Principal,
     borderColor: Color = GlColors.General,
-    backgroundColor: Color = GlColors.Principal,
+    backgroundColor: Color = GlColors.General,
     enable: Boolean = true,
     onClick: () -> Unit
 ) {
@@ -38,7 +35,7 @@ fun GlButton(
 
     Surface(
         modifier = modifier.noRippleClickable(onClick = if (enable) onClick else emptyOnclick),
-        shape = GlTheme.shape,
+        shape = GlProperties.shape,
         border = BorderStroke(
             width = 1.dp,
             color = if (enable) borderColor else borderColor.copy(alpha = alpha)

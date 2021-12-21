@@ -11,6 +11,7 @@ import androidx.compose.ui.unit.dp
 import com.airbnb.lottie.compose.*
 import guillermo.lagos.composables.shared.GlColors
 import guillermo.lagos.composables.shared.GlTextStyle
+import guillermo.lagos.composables.shared.GlProperties
 import guillermo.lagos.composables.shared.gradientBackground
 
 @ExperimentalMaterialApi
@@ -18,7 +19,7 @@ import guillermo.lagos.composables.shared.gradientBackground
 fun GlLoading(
     isLoading: Boolean = false,
     message: String,
-    animation: Int,
+    animation: Int = GlProperties.loading,
 ) {
     Box(
         modifier = Modifier

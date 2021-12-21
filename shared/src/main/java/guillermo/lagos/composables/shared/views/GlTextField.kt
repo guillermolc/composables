@@ -17,9 +17,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import guillermo.lagos.composables.*
-import guillermo.lagos.composables.shared.GlColors
-import guillermo.lagos.composables.shared.GlTextStyle
-import guillermo.lagos.composables.shared.GlTheme
+import guillermo.lagos.composables.shared.*
 import guillermo.lagos.composables.shared.R
 
 @ExperimentalComposeUiApi
@@ -66,8 +64,8 @@ fun GlTextField(
                 onValueChange = { onValueChange(it) },
                 modifier = Modifier
                     .weight(1f)
-                    .clip(GlTheme.shape)
-                    .border(1.dp, GlColors.General, GlTheme.shape)
+                    .clip(GlProperties.shape)
+                    .border(1.dp, GlColors.General, GlProperties.shape)
                     .background(color = GlColors.Principal)
                     .padding(
                         horizontal = 8.dp,

@@ -8,8 +8,14 @@ object GlColors{
 
         var General = Color(0xFF000000)
 
+        /**
+         * Use on cards or another views
+         */
         val Principal = Color(0xFFFFFFFF)
 
+        /**
+         * Use how to background for layouts
+         */
         val Secondary = Color(0xFFF3F3F7)
 
         val Transparent = Color(0x00000000)

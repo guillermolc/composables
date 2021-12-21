@@ -16,9 +16,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import guillermo.lagos.composables.shared.GlColors
-import guillermo.lagos.composables.shared.GlTextStyle
-import guillermo.lagos.composables.shared.GlTheme
+import guillermo.lagos.composables.shared.*
 import guillermo.lagos.composables.shared.R
 import java.util.*
 
@@ -72,8 +70,8 @@ fun DateSelector(
                 text = date.value ?: "",
                 modifier = Modifier
                     .weight(1f)
-                    .clip(GlTheme.shape)
-                    .border(1.dp, GlColors.General, GlTheme.shape)
+                    .clip(GlProperties.shape)
+                    .border(1.dp, GlColors.General, GlProperties.shape)
                     .background(color = GlColors.Secondary)
                     .padding(
                         horizontal = 8.dp,

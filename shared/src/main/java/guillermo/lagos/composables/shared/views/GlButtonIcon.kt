@@ -15,7 +15,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import guillermo.lagos.composables.shared.GlColors
-import guillermo.lagos.composables.shared.GlTheme
+import guillermo.lagos.composables.shared.GlProperties
+import guillermo.lagos.composables.shared.GlShapes
 import guillermo.lagos.composables.shared.noRippleClickable
 
 @ExperimentalComposeUiApi
@@ -30,7 +31,7 @@ fun GlButtonIcon(
 ) {
     Surface(
         modifier = modifier.noRippleClickable(onClick = onClick),
-        shape = GlTheme.shape,
+        shape = GlProperties.shape,
         border = BorderStroke(
             width = 1.dp,
             color = borderColor

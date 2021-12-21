@@ -36,11 +36,11 @@ class MainActivity : ComponentActivity() {
             )
 
             Surface(color = GlColors.Secondary) {
-                /*Screen()*/
+                Screen()
                 /*ScreenError()*/
                 /*ScreenLoading()*/
                 /*ScreenSignature()*/
-                ScreenWithToolbar()
+                /*ScreenWithToolbar()*/
             }
         }
     }
